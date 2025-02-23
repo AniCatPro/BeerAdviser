@@ -1,4 +1,5 @@
 # Лабораторная работа №1
+Выполнил - Афанасьев Павел
 [BeerAdviser](https://github.com/ISTU-PO-ANDROID/BeerAdviser) - исходник
 
 ## Добавленный функционал
