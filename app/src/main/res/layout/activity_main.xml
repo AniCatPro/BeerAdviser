@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,12 +23,57 @@
         android:layout_margin="16dp"
         android:text="@string/find_beer" />
 
+    <!-- Изображение пива -->
+    <ImageView
+        android:id="@+id/beer_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+    <!-- Текст с гиперссылкой -->
     <TextView
-        android:id="@+id/brands"
+        android:id="@+id/beer_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:text="@string/beer_types" />
+        android:textColor="@android:color/holo_blue_dark"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/beer_item_background"
+        android:padding="12dp"/>
 
+    <!-- Блок с изображением и названием пива -->
+    <LinearLayout
+        android:id="@+id/beer_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp">
+
+        <!-- Изображение пива -->
+        <ImageView
+            android:id="@+id/beer_image_2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Название пива и ссылка -->
+        <TextView
+            android:id="@+id/beer_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jail Pale Ale"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/beer_item_background"
+            android:padding="12dp"/>
+
+    </LinearLayout>
 </LinearLayout>
